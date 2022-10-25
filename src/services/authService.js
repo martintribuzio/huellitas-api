@@ -46,7 +46,7 @@ class AuthService {
     }
 
     #getToken(user) {
-        return sign(user, config.jwtSecret, { expiresIn: '2d' })
+        return sign(user, config.jwtSignKey, { expiresIn: '2d',  algorithm: "RS256" })
     }
 }
 
