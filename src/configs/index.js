@@ -15,6 +15,4 @@ const config = {
     vapidPublicKey: process.env.VAPID_PUBLIC_KEY
 }
 
-console.log(config);
-
 export default config
